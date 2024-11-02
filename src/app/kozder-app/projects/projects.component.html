@@ -1,0 +1,7 @@
+<h2>Projelerimiz</h2>
+<div *ngFor="let project of projects" class="project-card">
+  <h3>{{ project.name }}</h3>
+  <p>{{ project.description }}</p>
+  <img ngSrc="project.image" alt="{{ project.name }}" fill/>
+  <a [routerLink]="['/projects', project.id]">Detaylar</a>
+</div>

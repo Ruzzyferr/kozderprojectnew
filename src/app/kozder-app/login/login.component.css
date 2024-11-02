@@ -1,0 +1,87 @@
+/* styles.css */
+
+/* Renk Paleti */
+:root {
+  --primary-color: #4a90e2; /* Ana mavi renk */
+  --secondary-color: #f8f9fa; /* Gri arka plan rengi */
+  --text-color: #343a40; /* Koyu metin rengi */
+  --placeholder-color: #b8c2cc; /* Gri placeholder rengi */
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ana kapsayıcı stil */
+.container {
+  height: 100vh; /* Tam yükseklik */
+}
+
+/* Buton stilleri */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Form stilleri */
+input {
+  border-radius: 0.375rem; /* Yuvarlak köşeler */
+}
+
+label {
+  color: var(--text-color);
+}
+
+/* Checkbox stilleri */
+.form-checkbox {
+  width: 1.25rem; /* Checkbox boyutu */
+  height: 1.25rem;
+}
+
+.text-blueGray-200 {
+  color: #b8c2cc;
+}
+
+/* Genel metin stilleri */
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Duyuru bağlantıları */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
